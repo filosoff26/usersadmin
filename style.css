@@ -1,0 +1,8 @@
+table {
+	border-collapse: collapse;
+}
+
+.error {
+	padding: 5px;
+	background: #ffa3a3;
+}
