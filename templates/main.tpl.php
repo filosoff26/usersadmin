@@ -6,11 +6,17 @@
 </head>
 <body>
 	<header>
-		<h1>Users administration page</h1>
+		<h1>Users administration</h1>
 		<nav>
-			<a href="users.php">list all</a> |
-			<a href="logout.php">logout</a>
+			<a href="users.php?action=new">New</a> |
+			<a href="users.php">List all</a> |
+			<a href="logout.php">Logout</a>
 		</nav>
+		<?php if ($info): ?>
+			<?php foreach ($info as $msg): ?>
+				<div class='info'>Info: <?= $msg ?></div>
+			<?php endforeach; ?>
+		<?php endif; ?>
 		<?php if ($warnings): ?>
 			<?php foreach ($warnings as $msg): ?>
 				<div class='warning'>Warning: <?= $msg ?></div>

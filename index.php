@@ -1,5 +1,4 @@
 <?php
-require_once 'include/functions.php';
 
 /* routing */
 session_start();

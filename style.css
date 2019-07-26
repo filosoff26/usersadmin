@@ -2,6 +2,11 @@ table {
 	border-collapse: collapse;
 }
 
+nav {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 .error {
 	padding: 5px;
 	background: #ffa3a3;
